@@ -100,9 +100,9 @@ allprojects {
 App-level build.gradle \(\<project>/\<app-module>/build.gradle):
 
 ```
-compile 'com.github.mnayef95.UReflection:annotations:v1.0.0'
-compile 'com.github.mnayef95.UReflection:utils:v1.0.0'
-annotationProcessor 'com.github.mnayef95.UReflection:compiler:v1.0.0'
+compile 'com.github.mnayef95.UReflection:annotations:v1.2.0'
+compile 'com.github.mnayef95.UReflection:utils:v1.2.0'
+annotationProcessor 'com.github.mnayef95.UReflection:compiler:v1.2.0'
 ```
 
 # Support annotations
