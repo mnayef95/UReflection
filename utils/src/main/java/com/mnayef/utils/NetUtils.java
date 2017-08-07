@@ -79,7 +79,9 @@ public class NetUtils {
 
     public boolean isWifi(Context cxt) {
         ConnectivityManager cm = (ConnectivityManager) cxt.getSystemService(Context.CONNECTIVITY_SERVICE);
-        return cm.getActiveNetworkInfo().getType() == ConnectivityManager.TYPE_WIFI;
+        return cm != null
+                && cm.getActiveNetworkInfo() != null
+                && cm.getActiveNetworkInfo().getType() == ConnectivityManager.TYPE_WIFI;
     }
 
     public boolean isFastNetwork(Context context) {
